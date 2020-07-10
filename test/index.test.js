@@ -12,7 +12,7 @@ const remark = require('remark');
 const dedent = require('dedent');
 const checkLinks = require('check-links');
 const isOnline = require('is-online');
-const plugin = require('.');
+const plugin = require('../src');
 
 const processMarkdown = (md, opts) => {
   return remark()

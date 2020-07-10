@@ -86,5 +86,5 @@ Here is a [bad relative link](wooorm/remark-dead-link)
 ```
 
 [check-links]: https://github.com/transitive-bullshit/check-links
-[Got]: https://github.com/sindresorhus/got
+[got]: https://github.com/sindresorhus/got
 [remark-lint]: https://github.com/remarkjs/remark-lint
