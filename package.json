@@ -1,65 +1,50 @@
 {
-  "name": "@fox-land/remark-lint-no-dead-url",
-  "version": "1.0.2",
-  "description": "Ensure URLs are not dead",
-  "main": "index.js",
-  "scripts": {
-    "precommit": "lint-staged",
-    "format": "prettier --write \"*.js\"",
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eankeen/remark-lint-no-dead-url.git"
-  },
-  "keywords": [
-    "remark",
-    "remark-plugin",
-    "lint",
-    "markdown",
-    "remark-lint"
-  ],
-  "author": "Edwin Kofler",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/eankeen/remark-lint-no-dead-url/issues"
-  },
-  "homepage": "https://github.com/eankeen/remark-lint-no-dead-url#readme",
-  "dependencies": {
-    "check-links": "^1.1.8",
-    "is-online": "^8.2.1",
-    "unified-lint-rule": "^1.0.4",
-    "unist-util-visit": "^2.0.1"
-  },
-  "devDependencies": {
-    "dedent": "^0.7.0",
-    "eslint": "^6.7.1",
-    "eslint-plugin-node": "^10.0.0",
-    "husky": "^3.1.0",
-    "jest": "^24.9.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "1.19.1",
-    "remark": "^11.0.2"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "clearMocks": true,
-    "transform": {}
-  },
-  "prettier": {
-    "singleQuote": true,
-    "arrowParens": "always"
-  },
-  "engines": {
-    "node": ">=12"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint",
-      "prettier --write",
-      "git add"
-    ]
-  }
+	"name": "@fox-land/remark-lint-no-dead-url",
+	"version": "1.0.2",
+	"description": "Ensure URLs are not dead",
+	"main": "index.js",
+	"scripts": {
+		"precommit": "lint-staged",
+		"format": "prettier --write \"*.js\"",
+		"lint": "eslint . --config=.config/build/eslint.config.json",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eankeen/remark-lint-no-dead-url.git"
+	},
+	"keywords": [
+		"remark",
+		"remark-plugin",
+		"remark-lint",
+		"lint",
+		"markdown"
+	],
+	"author": "Edwin Kofler",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/eankeen/remark-lint-no-dead-url/issues"
+	},
+	"homepage": "https://github.com/eankeen/remark-lint-no-dead-url#readme",
+	"dependencies": {
+		"check-links": "^1.1.8",
+		"is-online": "^8.2.1",
+		"unified-lint-rule": "^1.0.4",
+		"unist-util-visit": "^2.0.1"
+	},
+	"devDependencies": {
+		"dedent": "^0.7.0",
+		"fox-preset-recommended": "^1.2.6",
+		"fox-suite": "^1.2.6",
+		"jest": "^24.9.0",
+		"remark": "^11.0.2"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"clearMocks": true,
+		"transform": {}
+	},
+	"engines": {
+		"node": ">=12"
+	}
 }

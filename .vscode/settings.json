@@ -1,0 +1,18 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javacsript"
+  ],
+  "eslint.options": {
+    "configFile": ".config/build/eslint.config.js"
+  },
+  "prettier.configPath": "./config/build/prettier.config.json",
+  "prettier.ignorePath": "./config/prettierignore",
+  "prettier.prettierPath": "/home/edwin/docs/programming/repos/remark-lint-no-dead-urls/node_modules/.pnpm/fox-plugin-prettier@1.2.6/node_modules/fox-plugin-prettier/node_modules/prettier"
+}
